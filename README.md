@@ -2,20 +2,38 @@
 
 ## Introduction
 
-Bilateral Reference Network achieves SOTA result in multi Salient Object Segmentation dataset, this repo pack BiRefNet as ComfyUI nodes, and make this SOTA model easier use for everyone.
+The Bilateral Reference Network (BiRefNet) achieves state-of-the-art results in multiple Salient Object Segmentation datasets. This repository integrates BiRefNet as ComfyUI nodes, simplifying access to this advanced model.
 
-## Installation 
+## Installation
 
-1. Go to comfyUI custom_nodes folder, `ComfyUI/custom_nodes/`
-2. `git clone https://github.com/viperyl/ComfyUI-BiRefNet.git `
-3. `pip install requirements.txt`
+Install the BiRefNet node in your ComfyUI environment:
 
-## Checkpoints Download
+1. Navigate to your ComfyUI custom nodes directory:
+   ```bash
+   cd ComfyUI/custom_nodes/
+   ```
+2. Clone the BiRefNet repository:
+   ```bash
+   git clone https://github.com/viperyl/ComfyUI-BiRefNet.git
+   ```
+3. Install the necessary requirements:
+   ```bash
+   pip install -r ComfyUI-BiRefNet/requirements.txt
+   ```
 
-Make sure you have intall `git lfs`
+## Model Checkpoints
 
-1. go to comfyUI models folder, `ComfyUI/models/`
-2. `git clone https://huggingface.co/ViperYX/BiRefNet`
+Before using BiRefNet, download the model checkpoints with Git LFS:
+
+1. Ensure `git lfs` is installed. If not, [install it](https://git-lfs.github.com/).
+2. Download the checkpoints to the ComfyUI models directory by pulling the large model files using git lfs:
+   ```bash
+   cd ./models/
+   git clone https://huggingface.co/ViperYX/BiRefNet
+   cd BiRefNet
+   git lfs install
+   git lfs pull
+   ```
 
 ## Usage
 
